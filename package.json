@@ -6,14 +6,24 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "@types/echarts": "^4.6.3",
     "@types/jest": "^24.0.0",
+    "@types/mirrorx": "^0.2.6",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "@types/react-router-dom": "^5.1.5",
     "antd": "^4.4.0",
     "axios": "^0.19.2",
+    "echarts": "^4.8.0",
+    "echarts-for-react": "^2.0.16",
+    "mirrorx": "^1.1.1",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
     "node-sass": "^4.14.1",
+    "number-precision": "^1.5.0",
     "react": "^16.13.1",
+    "react-countup": "^4.3.3",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "typescript": "~3.7.2"
@@ -25,6 +35,11 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "parserOptions":{
+      "ecmaFeatures":{
+        "legacyDecorators":true
+      }
+    },
     "extends": "react-app"
   },
   "browserslist": {
@@ -38,5 +53,29 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "babel": {
+    "plugins": [
+      [
+        "@babel/plugin-proposal-decorators",
+        {
+          "legacy": true
+        }
+      ],
+      [
+        "@babel/plugin-proposal-properties",
+        {
+          "loose": true
+        }
+      ]
+    ],
+    "presets": [
+      "react-app"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.4",
+    "react-router-dom": "^5.2.0"
   }
 }

@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.scss"],"names":[],"mappings":"AAAA,MACE,MAAO","file":"index.min.css","sourcesContent":["$color:green;\n.test{\n    color:$color;\n}"]}

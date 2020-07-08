@@ -1,12 +1,13 @@
 import React from 'react';
 import './index.scss';
 
-const head = () => {
+const Test = () => {
     return (
         <div className="borrow_head">
-            <h1 className='test'>lallala</h1>
+            <h1 className='test'>测试mobx</h1>
+
         </div>
 
     )
 }
-export default(head)
+export default (Test)

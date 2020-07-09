@@ -11,14 +11,14 @@ import './App.scss';
 
 function App() {
   return (
-    <Provider store={store}>
-      <Test />
-    </Provider>
-    // <Router>
-    //   <Provider store={store}>
-    //     <Test />
-    //   </Provider>
-    // </Router>
+    // <Provider store={store}>
+    //   <Test />
+    // </Provider>
+    <Router>
+      <Provider store={store}>
+        <Test />
+      </Provider>
+    </Router>
   );
 }
 

@@ -6,14 +6,19 @@ import React from 'react';
 import { Provider } from 'mobx-react'
 import store from './store/index'
 import Router from './router/index'
+import Test from './components/Test'
 import './App.scss';
-// mirror.model(model)
 
 function App() {
   return (
-    <Router>
-      <Provider store ={store}></Provider>
-    </Router>
+    <Provider store={store}>
+      <Test />
+    </Provider>
+    // <Router>
+    //   <Provider store={store}>
+    //     <Test />
+    //   </Provider>
+    // </Router>
   );
 }
 

@@ -1,4 +1,15 @@
 $color:green;
-.test{
-    color:$color;
+.test_head{
+    width: 300px;
+    height: 500px;
+    margin: auto;
+    background: gray;
+    .test{
+        color:$color;
+    }
+    .option{
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
